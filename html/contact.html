@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/contact.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header class="header">
+        <div class="header__bgimg"></div>
+        <h1 class="header__title">Contact</h1>
+    </header>
+    <nav class="menu">
+        <div class="menu__item"><a href="../index.html">About</a></div>
+        <div class="menu__item"><a href="../html/albums.html">Albums</a></div>
+        <div class="menu__item"><a href="../html/tourdates.html">Tour dates</a></div>
+        <div class="menu__item contact__active"><a href="../html/contact.html">Contact</a></div>
+    </nav>
+    <main class="main">
+        <content class="form">
+            <form class="contact__form" action="mailto: eetu.kianen@edu.futuregames.se" method="POST" enctype="text/plain">
+                <fieldset class="fieldset">
+                    <legend class="legend">Contact Information</legend>
+                    <label class="label__text" for="first__name">First name</label>
+                    <input class="name__input"required type="text" id="first__name" placeholder="Enter first name" name="first_name">
+                    <label class="label__text" for="last__name">Last name</label>
+                    <input class="name__input"required type="text" id="last__name" placeholder="Enter last name" name="last_name">
+                    <label class="label__text" for="email">Email address</label>
+                    <input class="name__input"required type="text" id="email" placeholder="Enter email address" name="email">    
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend class="legend">Message</legend>
+                    <label class="label__text" for="subject">What is your message regarding to?</label>
+                    <select required name="subject">
+                        <option value="site">Site</option>
+                        <option value="new__album">New album from Opeth</option>
+                        <option value="something__else">Something else?</option>
+                    </select>
+                    <label class="label__text" form="content__form">Write your message</label>
+                    <textarea required id="content__form" name="content__form" placeholder="Write your message here."></textarea>
+                    <button class="button">Send!</button>
+                </fieldset>
+            </form>                                                
+        </content>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">&copy;Eetu</p>
+    </footer>
+</body>
+</html>

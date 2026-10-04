@@ -1,0 +1,130 @@
+:root {
+    --primary-font: "Lugrasimo", 'Lucida Calligraphy', 'Fondamento', cursive;
+    --secondary-font: Inter, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    --primary-color: #6e7f99;
+    --secondary-color: #c5d9ff;
+    --third-color: #7e8f8f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    background-image: url(../images/opeth_logo_big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    background-position: center;
+}
+
+.menu {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    background: #7e8a9117;
+    border: 1px solid #4a567933;
+    border-radius: 8px;
+}
+
+.menu__item {
+    display: flex;
+    padding: 4px;
+    border-radius: 4px;
+    opacity: 100%;
+    font-size: 2vw;
+    cursor: pointer;
+    a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-family: var(--primary-font);
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: #31325b;
+        transition: color linear 0.4s;
+
+        a {
+            color: #e7f3f4;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    padding: 64px;
+
+}
+
+.content {
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        padding: 0 10px;
+    }
+    .menu {
+        border-width: 1px;
+        margin: 8px 48px;
+        width: auto;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: 14vh;
+        transition: none;
+    }
+    .menu__item {
+        margin: auto;
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .menu {
+        flex-direction: row;
+        width: auto;
+        justify-content: space-around;
+        border-radius: 4px;
+        margin: 20px;
+        border-width: 1px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main {
+        padding: 100px;
+    }
+
+    .menu {
+        margin: 10px 200px;
+    }
+
+    .menu__item {
+        font-size: 1.3vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .main {
+        padding: 0 40px;
+        margin: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        height: 100%;
+    }
+}

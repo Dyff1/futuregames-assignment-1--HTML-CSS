@@ -1,0 +1,17 @@
+.footer {
+    padding: 32px;
+    background-color: #000;
+    height: 10%;
+}
+
+.footer__text {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 600px) {
+    .footer__text {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,39 @@
+.header {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 0 10px 0;
+    margin: 36px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    background: #7e8a9117;
+    border: 1px solid #4a567933;
+}
+
+.header__bgimg {
+    display: flex;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+}
+
+.header__title {
+    color: var(--primary-color);
+    font-size: 6vw;
+    margin: 0;
+    padding-left: 2%;
+    text-align: center;
+    text-shadow: #615fa6 1px 0 10px;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .header {
+        margin: 10px 200px;
+    }
+    .header__title {
+        font-size: 5vw;
+    }
+}
